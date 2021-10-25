@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>1st num</label>
+    <input type="number" name="a" id="first" placeholder="enter 1st num"><br><br>
+    <label>2nd num</label>
+    <input type="number" name="b" id="second" placeholder="enter 2nd num"><br><br>
+    <label>3rd num</label>
+    <input type="number" name="c" id="third" placeholder="enter 3rd num"><br><br>
+    <button onclick = "biggest()">Submit</button> <br><br>
+       
+        
+    <h1 id = "num"></h1>
+
+    <script type="text/javascript">
+        function biggest()
+        {
+        var a,b,c;
+        a = parseInt(document.getElementById ("first").value);
+        b = parseInt(document.getElementById ("second").value);
+        c = parseInt(document.getElementById ("third").value);
+        if(a > b && a > c)
+        {
+        document.getElementById ("num").innerHTML = a+" is the biggest number";
+        }
+        else
+        if(b > c && b > a)
+        {
+        document.getElementById ("num").innerHTML = b+" is the biggest number";
+        }
+        else
+        {
+        document.getElementById ("num").innerHTML = c+"is the biggest number";
+        }
+        }
+        </script>
+</body>
+</html>
